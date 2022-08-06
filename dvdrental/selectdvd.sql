@@ -58,3 +58,8 @@ ORDER BY store_id ASC, first_name DESC
 SELECT store_id,first_name,last_name FROM customer
 ORDER BY store_id DESC, first_name ASC
 
+-- LIMIT
+SELECT * FROM payment
+WHERE amount != 0.00
+ORDER BY payment_date DESC
+LIMIT 5;
