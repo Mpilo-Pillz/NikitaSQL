@@ -9,3 +9,32 @@ SELECT DISTINCT rating FROM film;
 
 -- We can count the records with COUNT
 SELECT COUNT(rating) FROM film;
+SELECT COUNT(amount) FROM payment;
+SELECT COUNT(DISTINCT amount) FROM payment;
+
+SELECT COUNT(title) FROM film
+WHERE rental_rate > 4 AND replacement_cost >= 19.99
+AND rating='R';
+
+-- select where 
+SELECT * FROM customer
+WHERE first_name='Jared';
+
+SELECT * FROM film
+WHERE rental_rate > 4;
+
+-- AND
+SELECT * FROM film
+WHERE rental_rate > 4 AND replacement_cost >= 19.99;
+
+SELECT * FROM film
+WHERE rental_rate > 4 AND replacement_cost >= 19.99
+AND rating='R';
+
+-- OR
+SELECT COUNT(*) FROM film
+WHERE rating='R' OR rating='PG-13';
+
+-- NOT EQUAL
+SELECT * FROM film
+WHERE rating !='R';
