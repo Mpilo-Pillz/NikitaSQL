@@ -4,5 +4,10 @@ WHERE first_name='Nancy' AND last_name='Thomas'
 
 -- A CUSTOMER WHANTS TO KNOW WHAT THE MOVIE OUTLAW HANKY IS ABOUT. 
 --  GET THE DESCRIPTION FOR THE MOVIE
-SELECT description from film
+SELECT description FROM film
 WHERE title='Outlaw Hanky'
+
+
+-- A CUSTOMER IS LATE ON THEIR MOVIE RETURN. GET THE PHONE NUMBER FOR CUSTOMER LIVING IN ADDESS
+SELECT phone from address
+WHERE address='259 Ipoh Drive'
