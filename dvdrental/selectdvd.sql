@@ -38,3 +38,23 @@ WHERE rating='R' OR rating='PG-13';
 -- NOT EQUAL
 SELECT * FROM film
 WHERE rating !='R';
+
+-- order_by
+SELECT * FROM customer
+ORDER BY first_name DESC
+
+SELECT * FROM customer
+ORDER BY last_name ASC
+
+SELECT store_id,first_name,last_name FROM customer
+ORDER BY store_id ASC
+
+SELECT store_id,first_name,last_name FROM customer
+ORDER BY store_id, first_name DESC
+
+SELECT store_id,first_name,last_name FROM customer
+ORDER BY store_id ASC, first_name DESC
+
+SELECT store_id,first_name,last_name FROM customer
+ORDER BY store_id DESC, first_name ASC
+
