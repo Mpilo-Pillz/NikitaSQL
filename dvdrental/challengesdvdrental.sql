@@ -2,4 +2,7 @@
 SELECT email FROM customer
 WHERE first_name='Nancy' AND last_name='Thomas' 
 
-
+-- A CUSTOMER WHANTS TO KNOW WHAT THE MOVIE OUTLAW HANKY IS ABOUT. 
+--  GET THE DESCRIPTION FOR THE MOVIE
+SELECT description from film
+WHERE title='Outlaw Hanky'
