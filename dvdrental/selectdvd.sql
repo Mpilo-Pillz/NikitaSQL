@@ -63,3 +63,19 @@ SELECT * FROM payment
 WHERE amount != 0.00
 ORDER BY payment_date DESC
 LIMIT 5;
+
+-- BETWEEN
+SELECT * FROM payment
+WHERE amount BETWEEN 8 AND 9
+
+SELECT * FROM payment
+WHERE amount NOT BETWEEN 8 AND 9
+
+SELECT COUNT(*) FROM payment
+WHERE amount NOT BETWEEN 8 AND 9
+
+SELECT COUNT(*) FROM payment
+WHERE payment_date BETWEEN '2007-02-01' AND '2007-02-15'
+
+SELECT * FROM payment
+WHERE payment_date BETWEEN '2007-02-01' AND '2007-02-15'
