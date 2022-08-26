@@ -87,3 +87,7 @@ LIMIT 2;
 -- ORDER BY
 SELECT DISTINCT(amount) FROM payment
 ORDER BY amount
+
+-- IN
+SELECT * FROM payment
+WHERE amount IN (0.99,1.98,1.99)
